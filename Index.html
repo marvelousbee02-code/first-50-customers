@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A practical guide to finding prospects, starting better sales conversations, and building a customer-acquisition system through WhatsApp and Instagram without paid ads.">
+<title>The First 50 Customers Playbook | Tahir Digitals</title>
+<style>
+:root{
+  --bg:#101210; --panel:#191d19; --panel2:#20251f; --text:#f6f7f2;
+  --muted:#b9c0b5; --lime:#c6ff4d; --line:#343b31; --ink:#10130d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-weight:850;letter-spacing:.06em;font-size:14px;text-transform:uppercase}
+.brand span{color:var(--lime)}
+.nav a{font-size:14px;text-decoration:none;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 22px;border-radius:9px;background:var(--lime);color:var(--ink);font-weight:850;text-decoration:none;border:1px solid var(--lime);transition:transform .15s ease,filter .15s ease}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
+.btn.secondary{background:transparent;color:var(--text);border-color:#5a6651}
+.hero{padding:74px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:52px}
+.eyebrow{color:var(--lime);text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:900}
+h1{font-size:clamp(42px,6vw,76px);line-height:.99;letter-spacing:-.055em;margin:18px 0 24px;max-width:760px}
+h1 em{font-style:normal;color:var(--lime)}
+.lead{font-size:clamp(17px,2vw,20px);line-height:1.65;color:#d6dbd1;max-width:660px}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:13px;margin-top:30px}
+.micro{font-size:12px;color:var(--muted);margin-top:14px}
+.book-stage{display:flex;justify-content:center;align-items:center;min-height:420px;position:relative}
+.glow{position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(198,255,77,.11);filter:blur(55px)}
+.book{position:relative;width:min(290px,80%);min-height:390px;background:linear-gradient(145deg,#242923,#0c0e0c 75%);border:1px solid #58634b;box-shadow:18px 24px 0 #070807,0 25px 65px rgba(0,0,0,.5);padding:26px 23px;transform:rotate(2deg);display:flex;flex-direction:column;justify-content:space-between}
+.book:before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:rgba(255,255,255,.13)}
+.book-top{font-size:10px;letter-spacing:.16em;color:var(--lime);font-weight:900}
+.book-title{font-size:clamp(30px,4vw,42px);font-weight:950;line-height:.92;letter-spacing:-.055em;text-transform:uppercase;margin:34px 0 18px}
+.book-title span{color:var(--lime)}
+.book-sub{font-size:12px;line-height:1.5;color:#e1e7da;max-width:220px}
+.chat-motif{display:flex;flex-direction:column;gap:8px;margin-top:20px}
+.bubble{height:22px;border:1px solid #65764d;border-radius:7px;width:75%;background:rgba(198,255,77,.08)}
+.bubble:nth-child(2){width:58%;margin-left:auto;background:rgba(255,255,255,.04);border-color:#4d5549}
+.book-footer{font-size:10px;font-weight:800;letter-spacing:.12em;margin-top:22px}
+.trust-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#151814;padding:18px 0}
+.trust-items{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+.trust-items strong{color:var(--text)}
+section{padding:76px 0}
+.section-label{font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:900;color:var(--lime)}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.04em;margin:13px 0 18px}
+.section-intro{font-size:18px;color:var(--muted);max-width:760px}
+.problem-grid,.feature-grid,.inside-grid,.deliver-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card .num{font-size:12px;color:var(--lime);font-weight:900;letter-spacing:.12em}
+.card h3{font-size:19px;line-height:1.25;margin:12px 0 9px}
+.card p{color:var(--muted);font-size:15px;margin:0}
+.why{background:var(--panel);border-block:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.list{list-style:none;padding:0;margin:24px 0 0}
+.list li{padding:12px 0 12px 30px;position:relative;border-bottom:1px solid rgba(255,255,255,.08);color:#dfe3db}
+.list li:before{content:"✓";position:absolute;left:0;color:var(--lime);font-weight:900}
+.callout{border:1px solid #596747;background:linear-gradient(140deg,rgba(198,255,77,.09),rgba(198,255,77,.015));padding:27px;border-radius:15px}
+.callout strong{color:var(--lime)}
+.inside-grid{grid-template-columns:repeat(2,1fr)}
+.module{display:flex;gap:16px}
+.module-number{flex:0 0 42px;width:42px;height:42px;border-radius:10px;background:#293221;color:var(--lime);display:grid;place-items:center;font-weight:900}
+.module h3{margin:0 0 7px;font-size:17px}
+.module p{margin:0;color:var(--muted);font-size:14px}
+.toolkit{background:#151814;border-block:1px solid var(--line)}
+.deliver-grid{grid-template-columns:repeat(2,1fr)}
+.deliver{display:flex;gap:14px;align-items:flex-start}
+.icon{width:42px;height:42px;flex:0 0 42px;border-radius:11px;display:grid;place-items:center;background:var(--lime);color:var(--ink);font-weight:950}
+.deliver h3{margin:0 0 6px;font-size:17px}
+.deliver p{margin:0;color:var(--muted);font-size:14px}
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+.fit{padding:25px;border-radius:14px;background:var(--panel);border:1px solid var(--line)}
+.fit h3{margin-top:0}
+.fit ul{padding-left:20px;color:var(--muted)}
+.pricing{background:linear-gradient(180deg,#151814,#101210)}
+.price-card{max-width:760px;margin:30px auto 0;padding:clamp(26px,5vw,48px);border:1px solid #536344;background:linear-gradient(145deg,#20251d,#151814);border-radius:20px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.price-kicker{font-size:12px;letter-spacing:.15em;color:var(--lime);font-weight:900;text-transform:uppercase}
+.price{font-size:clamp(42px,7vw,68px);line-height:1.1;font-weight:950;letter-spacing:-.05em;margin:12px 0}
+.price-note{color:var(--muted);font-size:14px}
+.price-list{list-style:none;text-align:left;padding:0;margin:28px auto;max-width:440px}
+.price-list li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.price-list li:before{content:"✓";color:var(--lime);font-weight:900;margin-right:12px}
+.faq-list{max-width:820px;margin:30px auto 0}
+details{border-bottom:1px solid var(--line);padding:19px 0}
+summary{font-weight:800;cursor:pointer}
+details p{color:var(--muted);margin-bottom:0}
+.final-cta{text-align:center;background:var(--lime);color:var(--ink);padding:65px 0}
+.final-cta .section-label{color:#334515}
+.final-cta h2{max-width:800px;margin-inline:auto}
+.final-cta p{max-width:650px;margin:0 auto 25px;color:#2d3521}
+.final-cta .btn{background:var(--ink);color:var(--lime);border-color:var(--ink)}
+footer{padding:28px 0;color:var(--muted);font-size:12px}
+.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:800px){
+ .hero{padding:48px 0}.hero-grid,.two-col{grid-template-columns:1fr;gap:30px}
+ .book-stage{min-height:370px}.problem-grid,.feature-grid{grid-template-columns:1fr}
+ .inside-grid,.deliver-grid,.fit-grid{grid-template-columns:1fr}
+ section{padding:56px 0}.nav a:not(.btn){display:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">TAHIR <span>DIGITALS</span></div>
+    <a href="#inside">What's inside</a>
+    <a class="btn" href="https://selar.com/151kdk6117" target="_blank" rel="noopener">Get the Playbook ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow">A practical customer-acquisition guide</div>
+   <h1>Stop Posting and Hoping.<br><em>Start Finding Customers.</em></h1>
+   <p class="lead">Learn how to find potential buyers, start better sales conversations, and turn WhatsApp and Instagram into practical customer-acquisition channels—without paid ads.</p>
+   <p>Introducing <strong>The First 50 Customers Playbook</strong> by Tahir Digitals: a step-by-step resource for small-business owners who want a clearer process for finding prospects and improving sales.</p>
+   <div class="hero-actions">
+    <a class="btn" href="https://selar.com/151kdk6117" target="_blank" rel="noopener">GET THE PLAYBOOK ↗</a>
+    <a class="btn secondary" href="#inside">See what's included</a>
+   </div>
+   <div class="micro">Digital product · Secure checkout via Selar · No physical item shipped</div>
+  </div>
+  <div class="book-stage" aria-label="Stylized ebook cover mockup">
+   <div class="glow"></div>
+   <div class="book">
+    <div>
+     <div class="book-top">TAHIR DIGITALS PRESENTS</div>
+     <div class="book-title">THE FIRST<br><span>50</span><br>CUSTOMERS<br>PLAYBOOK</div>
+     <div class="book-sub">Win Your First Customers on WhatsApp and Instagram Without Paid Ads</div>
+     <div class="chat-motif"><div class="bubble"></div><div class="bubble"></div></div>
+    </div>
+    <div class="book-footer">FIND PROSPECTS. START CONVERSATIONS. MAKE SALES.</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="trust-strip">
+ <div class="wrap trust-items">
+  <span><strong>Practical guide</strong> — not just theory</span>
+  <span><strong>Worksheets</strong> to help you take action</span>
+  <span><strong>30-day plan</strong> to organize your effort</span>
+ </div>
+</div>
+
+<section>
+ <div class="wrap">
+  <div class="section-label">Sound familiar?</div>
+  <h2>You have something to sell.<br>But where are the customers?</h2>
+  <p class="section-intro">Posting more often isn't a complete sales strategy. If people view your content but don't buy, you may need a clearer offer and a more deliberate way to find and convert potential customers.</p>
+  <div class="problem-grid">
+   <article class="card"><div class="num">01 / VISIBILITY</div><h3>You post, but few people inquire</h3><p>Your content is going out, but it isn't consistently bringing the right potential buyers into a conversation.</p></article>
+   <article class="card"><div class="num">02 / CONVERSATIONS</div><h3>You don't know what to say</h3><p>You want to introduce your product without sounding pushy, generic, or desperate for a sale.</p></article>
+   <article class="card"><div class="num">03 / CONVERSION</div><h3>Interested people disappear</h3><p>People ask questions or request prices, but you don't have a clear process for follow-up and next steps.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="why">
+ <div class="wrap two-col">
+  <div>
+   <div class="section-label">Why it happens</div>
+   <h2>Social media presence is not the same as customer acquisition.</h2>
+   <p class="section-intro">A customer needs to understand what you sell, why it may help them, trust your business enough to consider buying, and know exactly how to take the next step.</p>
+  </div>
+  <div class="callout">
+   <h3>A better process starts with four things:</h3>
+   <ul class="list">
+    <li>A clear offer for a specific type of customer.</li>
+    <li>A way to identify relevant potential buyers.</li>
+    <li>Helpful, personalized conversations that build trust.</li>
+    <li>Consistent follow-up and tracking so you can improve.</li>
+   </ul>
+   <p><strong>The playbook helps you put these pieces into practice.</strong></p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="section-label">The solution</div>
+  <h2>Meet The First 50 Customers Playbook</h2>
+  <p class="section-intro">A practical guide for small-business owners selling physical or digital products who want to build a more intentional process for finding prospects and making sales through WhatsApp and Instagram.</p>
+  <div class="feature-grid">
+   <article class="card"><div class="num">FIND</div><h3>Identify better prospects</h3><p>Learn ways to research potential buyers and focus your time on people who may genuinely need what you sell.</p></article>
+   <article class="card"><div class="num">CONNECT</div><h3>Start useful conversations</h3><p>Use adaptable message examples to introduce your offer, respond to questions, and follow up respectfully.</p></article>
+   <article class="card"><div class="num">IMPROVE</div><h3>Track what is working</h3><p>Organize your activity and review inquiries, offers, orders, and conversion rates to find areas to improve.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="inside">
+ <div class="wrap">
+  <div class="section-label">Inside the playbook</div>
+  <h2>A clear path from offer to follow-up.</h2>
+  <p class="section-intro">The main ebook covers the core parts of a practical customer-acquisition process.</p>
+  <div class="inside-grid">
+   <article class="card module"><div class="module-number">01</div><div><h3>Diagnose why sales are slow</h3><p>Review your offer, positioning, prospect targeting, and customer journey.</p></div></article>
+   <article class="card module"><div class="module-number">02</div><div><h3>Build an offer people understand</h3><p>Clarify who you serve, what you sell, and how to communicate its value.</p></div></article>
+   <article class="card module"><div class="module-number">03</div><div><h3>Improve Instagram and WhatsApp</h3><p>Make your profiles, product information, and ordering steps clearer.</p></div></article>
+   <article class="card module"><div class="module-number">04</div><div><h3>Find qualified prospects</h3><p>Research relevant people and organize prospects instead of contacting random accounts.</p></div></article>
+   <article class="card module"><div class="module-number">05</div><div><h3>Start and manage conversations</h3><p>Use examples for inquiries, offers, follow-ups, and common objections.</p></div></article>
+   <article class="card module"><div class="module-number">06</div><div><h3>Create content with a purpose</h3><p>Plan content that explains products, answers questions, and invites a next step.</p></div></article>
+   <article class="card module"><div class="module-number">07</div><div><h3>Follow a 30-day action plan</h3><p>Organize your effort into manageable stages and learn from the results.</p></div></article>
+   <article class="card module"><div class="module-number">08</div><div><h3>Measure and keep improving</h3><p>Track prospects, conversations, orders, revenue, and customer retention.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="toolkit">
+ <div class="wrap">
+  <div class="section-label">Included in the package</div>
+  <h2>More than a book. Tools to help you implement.</h2>
+  <p class="section-intro">The companion printable toolkit gives you practical resources to adapt to your own business.</p>
+  <div class="deliver-grid">
+   <article class="deliver"><div class="icon">01</div><div><h3>Prospect worksheets</h3><p>Define your target customer, qualify prospects, and organize your outreach.</p></div></article>
+   <article class="deliver"><div class="icon">02</div><div><h3>Conversation templates</h3><p>Customizable examples for opening conversations, responding to interest, and following up.</p></div></article>
+   <article class="deliver"><div class="icon">03</div><div><h3>Content planning calendar</h3><p>Plan useful Instagram and WhatsApp Status content across a 14-day period.</p></div></article>
+   <article class="deliver"><div class="icon">04</div><div><h3>Tracking and checklists</h3><p>Review your daily actions and keep track of your sales process.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="section-label">Is it for you?</div>
+  <h2>Built for small businesses ready to take action.</h2>
+  <div class="fit-grid">
+   <div class="fit"><h3>Good fit if you…</h3><ul><li>Sell physical or digital products.</li><li>Use Instagram or WhatsApp to reach customers.</li><li>Want a practical starting process for finding prospects.</li><li>Are willing to test, follow up, and improve.</li></ul></div>
+   <div class="fit"><h3>Not a magic shortcut</h3><ul><li>It doesn't guarantee 50 customers or a specific income.</li><li>It won't replace a product people actually want.</li><li>It requires action and adaptation to your market.</li><li>It focuses on organic methods, not paid-ad management.</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap two-col">
+  <div>
+   <div class="section-label">Proof over promises</div>
+   <h2>Measure your progress. Don't rely on hype.</h2>
+   <p class="section-intro">No honest guide can guarantee a fixed number of customers. The playbook gives you a process and tracking tools so you can see what you are doing, where prospects drop off, and what to improve.</p>
+  </div>
+  <div class="callout">
+   <h3>Track the signals that matter</h3>
+   <ul class="list">
+    <li>Qualified prospects identified.</li>
+    <li>Relevant conversations started.</li>
+    <li>Offers and follow-ups made.</li>
+    <li>Orders completed and revenue earned.</li>
+   </ul>
+   <p><strong>Real customer feedback can be added here once you have permission to share it.</strong> This page does not use fabricated testimonials or invented results.</p>
+  </div>
+ </div>
+</section>
+
+<section class="pricing">
+ <div class="wrap">
+  <div style="text-align:center">
+   <div class="section-label">Get the package</div>
+   <h2>Start building your customer-acquisition system.</h2>
+   <p class="section-intro" style="margin-inline:auto">Get the guide and practical tools in one digital package.</p>
+  </div>
+  <div class="price-card">
+   <div class="price-kicker">Tahir Digitals digital package</div>
+   <h3 style="font-size:25px;margin:14px 0 0">The First 50 Customers Playbook</h3>
+   <div class="price">₦5,000</div>
+   <div class="price-note">Proposed price — confirm it matches the live Selar checkout before launch.</div>
+   <ul class="price-list">
+    <li>Main playbook PDF</li>
+    <li>Printable toolkit PDF</li>
+    <li>Practical worksheets and conversation templates</li>
+    <li>Content planning and sales tracking resources</li>
+    <li>30-day customer-acquisition action plan</li>
+   </ul>
+   <a class="btn" href="https://selar.com/151kdk6117" target="_blank" rel="noopener">CONTINUE TO CHECKOUT ↗</a>
+   <p class="micro">Payment and product delivery are handled through Selar. Check the checkout page for the final price and purchase terms.</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div style="text-align:center">
+   <div class="section-label">Questions</div>
+   <h2>Frequently asked questions</h2>
+  </div>
+  <div class="faq-list">
+   <details><summary>Do I need thousands of followers?</summary><p>No. The guide covers prospect research and direct conversations, so you can explore approaches that don't depend entirely on a large following. Results still depend on your offer, audience, and execution.</p></details>
+   <details><summary>Do I need to run paid advertisements?</summary><p>No. The playbook focuses on organic customer-acquisition methods and direct conversations. You can explore paid advertising separately if it makes sense for your business later.</p></details>
+   <details><summary>Can I use it for physical and digital products?</summary><p>Yes. The framework is intended for both. Adapt the examples, fulfillment process, and customer communication to your product.</p></details>
+   <details><summary>Will I definitely get 50 customers?</summary><p>No specific number of customers or amount of income is guaranteed. The title describes the goal you're working toward; results depend on market demand, pricing, offer quality, and consistent implementation.</p></details>
+   <details><summary>How will I receive the files?</summary><p>Digital delivery is handled through the linked Selar checkout, subject to the product and delivery settings configured by the seller.</p></details>
+   <details><summary>Is this a physical book?</summary><p>No. This is a digital product. No physical item will be shipped.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="final-cta">
+ <div class="wrap">
+  <div class="section-label">Your next step</div>
+  <h2>Stop guessing. Start building a repeatable process.</h2>
+  <p>Get the guide, use the toolkit, and apply the steps to your business. Your results will come from learning about your customers, taking action, and improving as you go.</p>
+  <a class="btn" href="https://selar.com/151kdk6117" target="_blank" rel="noopener">GET THE FIRST 50 CUSTOMERS PLAYBOOK ↗</a>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap footer-row">
+  <div><strong>TAHIR DIGITALS</strong><br>Practical digital resources for people building businesses online.</div>
+  <div>© <span id="year"></span> Tahir Digitals. All rights reserved.</div>
+ </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
